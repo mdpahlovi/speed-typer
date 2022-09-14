@@ -1,0 +1,12 @@
+Difference between local storage and session storage ? 
+Ans : The main difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab
+
+
+Difference between global scope and local scope ?
+Ans : Global variables are useful for values that are relatively constant, or that many functions in the script must access, such as a session id. A local variable, however, has a limited scope: it exists only within the block that it is declared in. Once that block ends, the variable is destroyed and its values lost 
+
+
+How event loop works in javascript ?
+Ans : The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+
+How can we get undefine?
