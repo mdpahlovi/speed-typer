@@ -57,11 +57,6 @@ body {
     color: white;
     display: none;
 }
-.modal-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #result {
     position: fixed;
     top: 0;
