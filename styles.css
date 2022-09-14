@@ -176,9 +176,21 @@ button {
     top: 0;
 }
 
+/* Blog */
+.blog-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog {
+    align-items: flex-start;
+}
+
 @media only screen and (max-width: 1024px) {
     #histories {
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
     #result {
         transform: translate(32vw, 32vh);
@@ -196,7 +208,8 @@ button {
 }
 
 @media only screen and (max-width: 512px) {
-    #histories {
+    #histories,
+    .blog-container {
         grid-template-columns: 1fr;
     }
     #result {
