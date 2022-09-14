@@ -57,11 +57,16 @@ body {
     color: white;
     display: none;
 }
+.modal-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #result {
     position: fixed;
-    top: 10%;
-    left: 10%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
     height: 250px;
     width: 400px;
     background-color: #171717;
