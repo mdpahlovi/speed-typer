@@ -23,6 +23,7 @@ body {
     justify-content: center;
     color: white;
     font-size: 25px;
+    padding: 0 24px;
     border-radius: 15px;
     background: rgb(255, 255, 255);
     background: linear-gradient(92.49deg, rgba(255, 255, 255, 0.1) 0.18%, rgba(255, 255, 255, 0.05) 99.85%);
@@ -35,7 +36,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-left: 5rem;
+    padding: 0 24px;
+    overflow: scroll;
     color: white;
     font-size: 32px;
     background-color: #171717;
@@ -205,7 +207,23 @@ button {
 .big-text {
     font-size: 64px;
 }
+
+@media only screen and (max-width: 1280px) {
+    .box-container {
+        padding: 0 20px;
+        min-width: 1024px;
+        margin: auto;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
+    .box-container {
+        min-width: 786px;
+        margin: auto;
+    }
+    #display {
+        font-size: 24px;
+    }
     #histories,
     .blog-container {
         grid-template-columns: repeat(2, 1fr);
@@ -215,20 +233,31 @@ button {
 
 @media only screen and (max-width: 768px) {
     .box-container {
-        padding: 0 20px;
-        width: 100%;
+        min-width: 640px;
+        margin: auto;
     }
     .big-text {
         font-size: 48px;
     }
 }
 
-@media only screen and (max-width: 512px) {
+@media only screen and (max-width: 640px) {
+    .box-container {
+        min-width: 512px;
+        margin: auto;
+    }
     #histories,
     .blog-container {
         grid-template-columns: 1fr;
     }
     .big-text {
         font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .box-container {
+        min-width: auto;
+        width: 100%;
     }
 }
