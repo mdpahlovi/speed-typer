@@ -14,42 +14,51 @@
         />
     </head>
     <body>
-        <div class="blog-container box-container">
-            <div class="blog card">
-                <h3>Difference between local storage and session storage ?</h3>
-                <p>
-                    <span style="font-weight: 500">Ans :</span> The main difference is that while data in localStorage
-                    doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is
-                    loaded in a particular tab in the browser, a unique page session gets created and assigned to that
-                    particular tab
-                </p>
+        <div class="box-container">
+            <div class="divider-container">
+                <div class="line"></div>
+                <h1 class="title2">Blogs</h1>
+                <div class="line"></div>
             </div>
-            <div class="blog card">
-                <h3>Difference between global scope and local scope ?</h3>
-                <p>
-                    <span style="font-weight: 500">Ans :</span> Global variables are useful for values that are
-                    relatively constant, or that many functions in the script must access, such as a session id. A local
-                    variable, however, has a limited scope: it exists only within the block that it is declared in. Once
-                    that block ends, the variable is destroyed and its values lost
-                </p>
-            </div>
-            <div class="blog card">
-                <h3>How event loop works in javascript ?</h3>
-                <p>
-                    <span style="font-weight: 500">Ans :</span> The Event Loop has one simple job — to monitor the Call
-                    Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event
-                    from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is
-                    called a tick in the Event Loop.
-                </p>
-            </div>
-            <div class="blog card">
-                <h3>How can we get undefine ?</h3>
-                <p>
-                    <span style="font-weight: 500">Ans :</span> The main difference is that while data in localStorage
-                    doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is
-                    loaded in a particular tab in the browser, a unique page session gets created and assigned to that
-                    particular tab
-                </p>
+            <div class="blog-container">
+                <div class="blog card">
+                    <h3>Difference between local storage and session storage ?</h3>
+                    <p>
+                        <span style="font-weight: 500">Ans :</span> The main difference is that while data in
+                        localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.
+                        Whenever a document is loaded in a particular tab in the browser, a unique page session gets
+                        created and assigned to that particular tab
+                    </p>
+                </div>
+                <div class="blog card">
+                    <h3>Difference between global scope and local scope ?</h3>
+                    <p>
+                        <span style="font-weight: 500">Ans :</span> Global variables are useful for values that are
+                        relatively constant, or that many functions in the script must access, such as a session id. A
+                        local variable, however, has a limited scope: it exists only within the block that it is
+                        declared in. Once that block ends, the variable is destroyed and its values lost
+                    </p>
+                </div>
+                <div class="blog card">
+                    <h3>How event loop works in javascript ?</h3>
+                    <p>
+                        <span style="font-weight: 500">Ans :</span> The Event Loop has one simple job — to monitor the
+                        Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the
+                        first event from the queue and will push it to the Call Stack, which effectively runs it. Such
+                        an iteration is called a tick in the Event Loop.
+                    </p>
+                </div>
+                <div class="blog card">
+                    <h3>How can we get undefine ?</h3>
+                    <p>
+                        <span style="font-weight: 500">Ans :</span> 1. Variable that is not initialized after declared
+                        we will get undefined. 2. If a function with no return. 3. Parameter that is not passed we will
+                        get undefined. 4. If return has no value we will get undefined. 5. Property that doesn't exists
+                        on an object we will get undefined. 6. Accessing array elements outside of the index range. 7.
+                        Deleting an element inside an array value of index is undefine. 8. Set a value directly to
+                        undefined.
+                    </p>
+                </div>
             </div>
         </div>
     </body>
