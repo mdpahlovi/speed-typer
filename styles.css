@@ -182,6 +182,31 @@ button {
     align-items: flex-start;
 }
 
+.black-shade {
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-header {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-text {
+    position: absolute;
+    color: white;
+    z-index: 100;
+}
+
+.big-text {
+    font-size: 64px;
+}
 @media only screen and (max-width: 1024px) {
     #histories,
     .blog-container {
@@ -201,6 +226,9 @@ button {
     #result {
         transform: translate(24vw, 32vh);
     }
+    .big-text {
+        font-size: 48px;
+    }
 }
 
 @media only screen and (max-width: 512px) {
@@ -211,5 +239,8 @@ button {
     #result {
         width: 100vw;
         transform: translate(0, 32vh);
+    }
+    .big-text {
+        font-size: 40px;
     }
 }
