@@ -23,7 +23,7 @@ body {
     justify-content: center;
     color: white;
     font-size: 25px;
-    padding: 0 24px;
+    padding: 0 20px;
     border-radius: 15px;
     background: rgb(255, 255, 255);
     background: linear-gradient(92.49deg, rgba(255, 255, 255, 0.1) 0.18%, rgba(255, 255, 255, 0.05) 99.85%);
@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 40px;
     overflow: scroll;
     color: white;
     font-size: 32px;
@@ -60,8 +60,8 @@ body {
     display: none;
 }
 #result {
-    height: 200px;
-    width: 400px;
+    height: 228px;
+    width: 368px;
     background-color: #171717;
     border-radius: 15px;
     border: 2px solid #9dffad;
@@ -222,6 +222,7 @@ button {
         margin: auto;
     }
     #display {
+        padding: 30px;
         font-size: 24px;
     }
     #histories,
@@ -235,6 +236,10 @@ button {
     .box-container {
         min-width: 640px;
         margin: auto;
+    }
+    #display {
+        padding: 20px;
+        font-size: 24px;
     }
     .big-text {
         font-size: 48px;

@@ -70,6 +70,9 @@ const gameOver = () => {
     const timeTaken = (finishTime - startTime) / 1000;
     const timeTakenDecimal = timeTaken.toFixed();
 
+    // type Speed Feed Back
+    const massage = typeSpeedFeedBack(questionText.length, timeTakenDecimal);
+
     // show result modal
     resultModal.innerHTML = "";
     resultModal.classList.toggle("hidden");
@@ -83,6 +86,7 @@ const gameOver = () => {
         <h1>Finished!</h1>
         <p>You took: <span class="bold">${timeTakenDecimal}</span> seconds</p>
         <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+        <p style="margin-bottom: 8px"><span class="bold">Feedback : </span>${massage}</p>
         <button onclick="closeModal()">Close</button>
     `;
 
@@ -137,3 +141,18 @@ setInterval(() => {
     const timeSpentDecimal = timeSpent.toFixed();
     document.getElementById("show-time").innerHTML = `${startTime ? timeSpentDecimal : 0} seconds`;
 }, 1000);
+
+// Type Speed Feedback
+const typeSpeedFeedBack = (sentenceLength, seconds) => {
+    const sentenceLengthHalf = sentenceLength / 2;
+    if (sentenceLengthHalf >= seconds) {
+        const massage = "You done A great Job";
+        return massage;
+    } else if (sentenceLength >= seconds) {
+        const massage = "Nice ! Keep Practice";
+        return massage;
+    } else {
+        const massage = "Keep trying will improve";
+        return massage;
+    }
+};
